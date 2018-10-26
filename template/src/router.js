@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import List from './views/List.vue'
 import Store from './views/Store.vue'
+import GetDataApi from './views/GetDataApi.vue'
+import Forms from './views/Forms.vue'
 
 Vue.use(Router)
 
@@ -36,5 +38,16 @@ export default new Router({
       name: 'axios',
       component: Store
     },
+    {
+      path: '/get_api',
+      name: 'get_api',
+      component: GetDataApi
+    },
+    {
+      path: '/forms',
+      name: 'forms',
+      component: Forms
+    },
+
   ]
 })

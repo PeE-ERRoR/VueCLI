@@ -1,7 +1,6 @@
 <template>
   <div class="list">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <GetData msg="List Data Vue.js App"/>
+    <GetData msg="List Data Sotre Vue.js App"/>
   </div>
 </template>
 
