@@ -5,6 +5,7 @@ import List from './views/List.vue'
 import Store from './views/Store.vue'
 import GetDataApi from './views/GetDataApi.vue'
 import Forms from './views/Forms.vue'
+import Chart from './views/Chart.vue'
 
 Vue.use(Router)
 
@@ -48,6 +49,10 @@ export default new Router({
       name: 'forms',
       component: Forms
     },
-
+    {
+      path: '/chart',
+      name: 'chart',
+      component: Chart
+    },
   ]
 })
