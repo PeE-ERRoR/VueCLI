@@ -16,7 +16,7 @@ export default {
             data: [30, 20, 50]
           },
           {
-            label: 'Data One',
+            label: 'Data Two',
             backgroundColor: '#ccc',
             data: [40, 25, 60]
           }
@@ -24,11 +24,8 @@ export default {
       }
     }
   },
-
-  props: ['data', 'options'],
   mounted () {
     this.renderChart(this.datacollection, {responsive: true, maintainAspectRatio: false})
-    // this.renderChart(this.data, this.options)
   },
 }
 </script>

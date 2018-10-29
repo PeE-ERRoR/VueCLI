@@ -1,15 +1,20 @@
 <template>
   <div class="chart">
     <h3 class="mt-3">Chart</h3>
-    <Chart :data="datacollection" :options="chartOptions" ></Chart>
-    <ChartExaples/>
+    <h4>Vue Chart</h4>
+    <VueChart :data="datacollection" :options="chartOptions" ></VueChart>
+    <h4>Vue Chart Exaples</h4>
+    <VueChartExaples/>
+    <h4>Vue Google Chart</h4>
+    <VueGoogleCharts></VueGoogleCharts>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Chart from '@/components/Chart.vue'
-import ChartExaples from '@/components/ChartExaples.vue'
+import VueGoogleCharts from '@/components/VueGoogleCharts.vue'
+import VueChart from '@/components/VueChart.vue'
+import VueChartExaples from '@/components/VueChartExaples.vue'
 import AddFramework from '@/components/AddFramework.vue'
 
 export default {
@@ -67,8 +72,9 @@ export default {
     }
   },
   components: {
-    Chart,
-    ChartExaples,
+    VueChart,
+    VueChartExaples,
+    VueGoogleCharts,
     AddFramework
   }
 }

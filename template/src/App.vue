@@ -51,4 +51,8 @@
   color: #2c3e50;
   /* margin-top: 60px; */
 }
+h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
 </style>
