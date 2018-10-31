@@ -1,6 +1,6 @@
 <template>
   <div class="chart">
-    <h3 class="mt-3">Chart</h3>
+    <h1 class="mt-3">Chart</h1>
     <h4>Vue Chart</h4>
     <VueChart :data="datacollection" :options="chartOptions" ></VueChart>
     <h4>Vue Chart Exaples</h4>
@@ -39,7 +39,7 @@ export default {
         },
         {
           name: "Vue.js",
-          price: 1000,
+          price: 1500,
           color: '#09D3A2'
         },
       ],

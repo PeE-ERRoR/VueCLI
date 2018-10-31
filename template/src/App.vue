@@ -28,6 +28,9 @@
             <li class="nav-item">
               <a class="nav-link disabled" href="#"><router-link to="/chart">Chart</router-link></a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#"><router-link to="/datatable">Datatable</router-link></a>
+            </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -51,7 +54,7 @@
   color: #2c3e50;
   /* margin-top: 60px; */
 }
-h3 {
+h1, img {
   text-align: center;
   margin-bottom: 15px;
 }

@@ -6,6 +6,7 @@ import Store from './views/Store.vue'
 import GetDataApi from './views/GetDataApi.vue'
 import Forms from './views/Forms.vue'
 import Chart from './views/Chart.vue'
+import Datatable from './views/Datatable.vue'
 
 Vue.use(Router)
 
@@ -53,6 +54,11 @@ export default new Router({
       path: '/chart',
       name: 'chart',
       component: Chart
+    },
+    {
+      path: '/datatable',
+      name: 'datatable',
+      component: Datatable
     },
   ]
 })
