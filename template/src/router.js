@@ -7,6 +7,7 @@ import GetDataApi from './views/GetDataApi.vue'
 import Forms from './views/Forms.vue'
 import Chart from './views/Chart.vue'
 import Datatable from './views/Datatable.vue'
+import FontAwesome from './views/FontAwesome.vue'
 
 Vue.use(Router)
 
@@ -60,5 +61,10 @@ export default new Router({
       name: 'datatable',
       component: Datatable
     },
+    {
+      path: '/fontawesome',
+      name: 'fontawesome',
+      component: FontAwesome
+    }
   ]
 })

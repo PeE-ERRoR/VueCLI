@@ -61,9 +61,11 @@
       <template slot="actions" slot-scope="row">
         <!-- We use @click.stop here to prevent a 'row-clicked' event from also happening -->
         <b-button size="sm" @click.stop="info(row.item, row.index, $event.target)" class="mr-1">
-          Info modal
+          <font-awesome-icon icon="eye"/> Info Modal
         </b-button>
         <b-button size="sm" @click.stop="row.toggleDetails">
+          <font-awesome-icon icon="search" v-if="!row.detailsShowing"/>
+          <font-awesome-icon icon="minus" v-if="row.detailsShowing"/> 
           {{ row.detailsShowing ? 'Hide' : 'Show' }} Details
         </b-button>
       </template>
@@ -91,6 +93,12 @@
 </template>
 
 <script>
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faCoffee, faHome, faEdit, faCog, faSearch, faEye, faMinus} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faCoffee, faHome, faEdit, faCog, faEye, faSearch, faMinus)
+
 const items = [
   { isActive: true, age: 40, name: { first: 'Dickerson', last: 'Macdonald' } },
   { isActive: false, age: 21, name: { first: 'Larsen', last: 'Shaw' } },
@@ -160,6 +168,9 @@ export default {
       this.totalRows = filteredItems.length
       this.currentPage = 1
     }
+  },
+  components: {
+    FontAwesomeIcon
   }
 }
 </script>

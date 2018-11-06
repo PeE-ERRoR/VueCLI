@@ -5,17 +5,28 @@
     <v-client-table
           :data="tableData"
           :columns="columns"
-          :options="options">
+          :options="options"
+          class="mb-5">
     </v-client-table>
 
     <h4>BV table component</h4>
-    <BvTable></BvTable>
+    <BvTable class="mb-5"/>
+
+    <h4>Vue Data Table</h4>
+    <VueDataTable/>
+
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import BvTable from '@/components/BvTable.vue'
+import VueDataTable from '@/components/VueDataTable.vue'
+// set language to EN
+import lang from 'element-ui/lib/locale/lang/en'
+import locale from 'element-ui/lib/locale'
+
+locale.use(lang)
 
 export default {
   name: 'datatable',
@@ -56,7 +67,11 @@ export default {
     // })
   },
   components: {
-    BvTable
+    BvTable,
+    VueDataTable
   }
 }
 </script>
+<style scope="">
+
+</style>
