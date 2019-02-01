@@ -14,25 +14,25 @@
               <a class="nav-link" href="#"><router-link to="/about">About</router-link></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#"><router-link to="/list">List Store</router-link></a>
+              <a class="nav-link" href="#"><router-link to="/list">List Store</router-link></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#"><router-link to="/axios">Axios</router-link></a>
+              <a class="nav-link" href="#"><router-link to="/axios">Axios</router-link></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#"><router-link to="/get_api">Get API</router-link></a>
+              <a class="nav-link" href="#"><router-link to="/get_api">Get API</router-link></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#"><router-link to="/forms">Forms</router-link></a>
+              <a class="nav-link" href="#"><router-link to="/forms">Forms</router-link></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#"><router-link to="/chart">Chart</router-link></a>
+              <a class="nav-link" href="#"><router-link to="/chart">Chart</router-link></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#"><router-link to="/datatable">Datatable</router-link></a>
+              <a class="nav-link" href="#"><router-link to="/datatable">Datatable</router-link></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#"><router-link to="/fontawesome">FontAwesome</router-link></a>
+              <a class="nav-link" href="#"><router-link to="/fontawesome">FontAwesome</router-link></a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
